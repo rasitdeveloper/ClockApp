@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StopwatchFragment">
+
+    <Button
+        android:id="@+id/stopwatchminus3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/startOrStopTextView2" />
+
+    <Button
+        android:id="@+id/stopwatchplus3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="+"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetButton2" />
+
+    <Button
+        android:id="@+id/stopwatchplus2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetButton1" />
+
+    <TextView
+        android:id="@+id/startOrStopTextView3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/start"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resetButton3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStopWatch3" />
+
+    <TextView
+        android:id="@+id/textViewStopWatch3"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+    <TextView
+        android:id="@+id/resetButton3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/pause"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/startOrStopTextView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStopWatch3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:hint="Enter stopwatch name"
+        android:inputType="textPersonName"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStopWatch2" />
+
+    <TextView
+        android:id="@+id/startOrStopTextView2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/start"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resetButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStopWatch2" />
+
+    <TextView
+        android:id="@+id/resetButton2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/pause"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/startOrStopTextView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStopWatch2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:hint="Enter stopwatch name"
+        android:inputType="textPersonName"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStopWatch1" />
+
+    <TextView
+        android:id="@+id/textViewStopWatch2"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <TextView
+        android:id="@+id/textViewStopWatch1"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName1" />
+
+    <TextView
+        android:id="@+id/startOrStopTextView1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/start"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resetButton1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStopWatch1" />
+
+    <TextView
+        android:id="@+id/resetButton1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/pause"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/reset"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/startOrStopTextView1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStopWatch1" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter stopwatch name"
+        android:inputType="textPersonName"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stopwatchminus2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/startOrStopTextView1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

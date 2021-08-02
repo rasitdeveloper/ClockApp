@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_alarm"
+        android:icon="@drawable/alarm"
+        android:title="Alarm" />
+
+    <item
+        android:id="@+id/ic_stopwatch"
+        android:icon="@drawable/stopwatch"
+        android:title="Stopwatch" />
+
+    <item
+        android:id="@+id/ic_countdown"
+        android:icon="@drawable/countdown"
+        android:title="Countdown" />
+</menu>

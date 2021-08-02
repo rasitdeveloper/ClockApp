@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmFragment">
+
+    <Button
+        android:id="@+id/open3"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:text="+"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectTimeBtn2" />
+
+    <Button
+        android:id="@+id/exit2"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:text="-"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelAlarmBtn1" />
+
+    <Button
+        android:id="@+id/exit3"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:text="-"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelAlarmBtn2" />
+
+    <Button
+        android:id="@+id/setAlarmBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        app:backgroundTint="@color/start"
+        android:textColor="@android:color/white"
+        android:text="set alarm"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/cancelAlarmBtn1"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/selectTimeBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTimeTxt1" />
+
+    <Button
+        android:id="@+id/cancelAlarmBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        app:backgroundTint="@color/stop"
+        android:textColor="@android:color/white"
+        android:text="cancel alarm"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/setAlarmBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTimeTxt1" />
+
+    <Button
+        android:id="@+id/selectTimeBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        app:backgroundTint="@color/teal_200"
+        android:textColor="@android:color/white"
+        android:text="select time"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/setAlarmBtn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTimeTxt1" />
+
+    <TextView
+        android:id="@+id/selectedTimeTxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="336dp"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/setAlarmBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        app:backgroundTint="@color/start"
+        android:textColor="@android:color/white"
+        android:text="set alarm"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/cancelAlarmBtn1"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/selectTimeBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTimeTxt1" />
+
+    <Button
+        android:id="@+id/cancelAlarmBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        app:backgroundTint="@color/stop"
+        android:textColor="@android:color/white"
+        android:text="cancel alarm"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/setAlarmBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTimeTxt1" />
+
+    <Button
+        android:id="@+id/selectTimeBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        app:backgroundTint="@color/teal_200"
+        android:textColor="@android:color/white"
+        android:text="select time"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/setAlarmBtn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTimeTxt1" />
+
+    <TextView
+        android:id="@+id/selectedTimeTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selectedTimeTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/selectTimeBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="select time"
+        app:backgroundTint="@color/teal_200"
+        android:textColor="@android:color/white"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toStartOf="@+id/setAlarmBtn1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTimeTxt1" />
+
+    <Button
+        android:id="@+id/setAlarmBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@color/start"
+        android:textColor="@android:color/white"
+        android:text="set alarm"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toStartOf="@+id/cancelAlarmBtn1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/selectTimeBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTimeTxt1" />
+
+    <Button
+        android:id="@+id/cancelAlarmBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@color/stop"
+        android:textColor="@android:color/white"
+        android:text="cancel alarm"
+        android:textSize="7sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/setAlarmBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/selectedTimeTxt1" />
+
+    <Button
+        android:id="@+id/open2"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="+"
+        android:textSize="7sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectTimeBtn1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

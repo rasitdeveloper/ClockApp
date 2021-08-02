@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountdownFragment">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Hour:"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/hourPlainTxt3"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer3" />
+
+    <Button
+        android:id="@+id/minus2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="165dp"
+        android:text="-"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/countDownTimer2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plus3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="140dp"
+        android:text="+"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/countDownTimer3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plus2" />
+
+    <Button
+        android:id="@+id/minus3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="140dp"
+        android:text="-"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/countDownTimer3"
+        app:layout_constraintTop_toBottomOf="@+id/minus2" />
+
+    <EditText
+        android:id="@+id/countDownTimer3"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Countdown timer name"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <Button
+        android:id="@+id/btnstop3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:text="stop"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnpause3"
+        app:layout_constraintTop_toBottomOf="@+id/secPlainTxt3" />
+
+    <Button
+        android:id="@+id/btnpause3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:text="pause"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@+id/btnstop3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnstart3"
+        app:layout_constraintTop_toBottomOf="@+id/minPlainTxt3" />
+
+    <Button
+        android:id="@+id/btnstart3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:text="start"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toStartOf="@+id/btnpause3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourPlainTxt3" />
+
+    <EditText
+        android:id="@+id/minPlainTxt3"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/secPlainTxt3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hourPlainTxt3"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer3" />
+
+    <EditText
+        android:id="@+id/secPlainTxt3"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/minPlainTxt3"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer3" />
+
+    <EditText
+        android:id="@+id/hourPlainTxt3"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/minPlainTxt3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer3" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="188dp"
+        android:background="#E91E63"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnpause1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnstop2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="stop"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnpause2"
+        app:layout_constraintTop_toBottomOf="@+id/secPlainTxt2" />
+
+    <Button
+        android:id="@+id/btnpause2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="pause"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@+id/btnstop2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnstart2"
+        app:layout_constraintTop_toBottomOf="@+id/minPlainTxt2" />
+
+    <Button
+        android:id="@+id/btnstart2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="start"
+        android:textSize="7sp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toStartOf="@+id/btnpause2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourPlainTxt2" />
+
+    <EditText
+        android:id="@+id/secPlainTxt2"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/minPlainTxt2"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer2" />
+
+    <EditText
+        android:id="@+id/minPlainTxt2"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/secPlainTxt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hourPlainTxt2"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer2" />
+
+    <EditText
+        android:id="@+id/countDownTimer2"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Countdown timer name"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view5" />
+
+    <Button
+        android:id="@+id/btnpause1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:text="pause"
+        android:textSize="7sp"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@+id/btnstop1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnstart1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#E91E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnpause1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnstart1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:text="start"
+        android:textSize="7sp"
+        app:backgroundTint="@color/teal_700"
+        app:layout_constraintEnd_toStartOf="@+id/btnpause1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/secPlainTxt1"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/btnstop1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/minPlainTxt1" />
+
+    <Button
+        android:id="@+id/btnstop1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:text="stop"
+        android:textSize="7sp"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnpause1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hourPlainTxt1"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/btnstart1"
+        app:layout_constraintEnd_toStartOf="@+id/minPlainTxt1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/minPlainTxt1"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/btnpause1"
+        app:layout_constraintEnd_toStartOf="@+id/secPlainTxt1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hourPlainTxt1" />
+
+    <EditText
+        android:id="@+id/countDownTimer1"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Countdown timer name"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hourPlainTxt2"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/minPlainTxt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer2" />
+
+    <Button
+        android:id="@+id/plus2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="165dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/countDownTimer2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Hour:"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/hourPlainTxt1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Hour:"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/hourPlainTxt2"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Minute:"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/minPlainTxt1"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Minute:"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/minPlainTxt2"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Minute:"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/minPlainTxt3"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Second:"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/secPlainTxt1"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Second:"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/secPlainTxt2"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Second:"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/secPlainTxt3"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
