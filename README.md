@@ -5,4 +5,4 @@ Alarm, Stopwatch and countdown timer
 ![3](https://user-images.githubusercontent.com/33697532/127860526-03502f69-3ac7-4883-8454-15f596639a1a.jpg)
 ![4](https://user-images.githubusercontent.com/33697532/127860540-a84f7627-282c-4909-9813-ae2b6e2f6d2c.jpg)
 ![5](https://user-images.githubusercontent.com/33697532/127860546-835ccced-3f16-45f9-8f79-b78b639cf7c7.jpg)
-![6](https://user-images.githubusercontent.com/33697532/127860555-cd20d5d1-781e-4448-9ff3-657921621328.jpg)
+![6](https://user-images.githubusercontent.com/33697532/127860715-c4e2137e-cfe3-4559-acf2-97279f512a26.jpg)
