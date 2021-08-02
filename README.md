@@ -1,5 +1,5 @@
 # ClockApp
-Alarm, Stopwatch and countdown timer
+Alarm, Stopwatch and countdown timer  
 ![1](https://user-images.githubusercontent.com/33697532/127860518-7fa7dc84-1509-4594-8d60-1d3d6d7e00e8.jpg)
 ![2](https://user-images.githubusercontent.com/33697532/127860521-947acd46-ce32-467c-ba50-487a25d927f4.jpg)
 ![3](https://user-images.githubusercontent.com/33697532/127860526-03502f69-3ac7-4883-8454-15f596639a1a.jpg)
